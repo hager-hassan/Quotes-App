@@ -1,0 +1,105 @@
+body{
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin-inline: 1.5625rem;
+    background-color: white;
+    padding: 3rem 2.5rem;
+    border-radius: 10px;
+    position: relative;
+    transform: translateY(-6rem);
+}
+
+.main{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #fb6f92;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title{
+    color: white;
+    font-weight: 800;
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.container::before{
+    content: "\f10d";
+    top: -1px;
+    box-shadow: inset -5px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container::after{
+    content: "\f10e";
+    transform: rotateX(180deg);
+    bottom: -1px;
+    right: 2.5rem;
+    box-shadow: inset 0px -5px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container::before , .container::after{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    background-color: #fb6f92;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    width: 15%;
+    height: 37px;
+}
+
+.content{
+    text-align: center;
+}
+
+.quote-note{
+    display: block;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: rgb(73, 73, 73);
+}
+
+.quote-btn{
+    margin-block: 1.25rem;
+    border-radius: 7px 0 7px 7px;
+    border-color: rgb(73, 73, 73);
+    color: rgb(54, 54, 54);
+    font-size: .9375rem;
+    padding: .4375rem .9375rem;
+    background-color: rgb(244, 244, 244);
+    overlay: none;
+    transition: all 0.4s;
+}
+
+.quote-btn:hover{
+    color: #fb6f92;
+    border-color: #fb6f92;
+    background-color: white;
+}
+
+.quote{
+    font-weight: 600;
+    font-size: 1.4375rem;
+    line-height: 2rem;
+    color: rgb(57, 57, 57);
+}
+
+.quote-author{
+    margin-top: 1rem;
+    font-size: 1.1875rem;
+    font-weight: 500;
+    color: rgb(57, 57, 57);
+}
